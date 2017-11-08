@@ -28,6 +28,29 @@ class PythonTest:
         while answer != 1:
             answer = int(input('Was wird der print-Befehl ausgeben?'))
         print('Richtig!\n')
+        
+    def test_03jo(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 1')
+        print('def my_func():')
+        print('\t x = 2')
+        print('\t print(x)')
+        answer = None
+        while answer != 2:
+            answer = int(input('Was wird der print-Befehl ausgeben?'))
+        print('Richtig!\n')
+        
+    def test_04jo(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 17')
+        print('y = 9')
+        print('z = float(x/y)')
+        answer = None
+        while answer != 1.0 or not isinstance(answer,float):
+            answer = input('Welchen Wert hat z?')
+        print('Richtig!\n')
 
 if __name__ == "__main__":
     test = PythonTest()
