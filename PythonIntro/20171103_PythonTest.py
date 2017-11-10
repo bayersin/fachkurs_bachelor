@@ -16,8 +16,41 @@ class PythonTest:
         while answer != 7:
             answer = int(input('Was ist der Inhalt von y?'))
         print('Richtig!\n')
+        
+    def test_02ma(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 7')
+        print('y = 3')
+        print('z = x/y')
+        answer = None
+        while answer != 2 or not isinstance(answer,int):
+            answer = input('Welchen Wert hat z?')
+        print('Richtig!\n')
+        
+    def test_03jo(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 17')
+        print('y = 9')
+        print('z = float(x/y)')
+        answer = None
+        while answer != 1.0 or not isinstance(answer,float):
+            answer = input('Welchen Wert hat z?')
+        print('Richtig!\n')
+        
+    def test_04ma(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 7.0')
+        print('y = 2')
+        print('z = x/y')
+        answer = None
+        while answer != 3.5 or not isinstance(answer,float):
+            answer = input('Welchen Wert hat z?')
+        print('Richtig!\n')
 
-    def test_02(self):
+    def test_05(self):
         print('--------------------------------------------')
         print('Frage:')
         print('x = 1')
@@ -29,7 +62,7 @@ class PythonTest:
             answer = int(input('Was wird der print-Befehl ausgeben?'))
         print('Richtig!\n')
         
-    def test_03jo(self):
+    def test_06jo(self):
         print('--------------------------------------------')
         print('Frage:')
         print('x = 1')
@@ -39,17 +72,6 @@ class PythonTest:
         answer = None
         while answer != 2:
             answer = int(input('Was wird der print-Befehl ausgeben?'))
-        print('Richtig!\n')
-        
-    def test_04jo(self):
-        print('--------------------------------------------')
-        print('Frage:')
-        print('x = 17')
-        print('y = 9')
-        print('z = float(x/y)')
-        answer = None
-        while answer != 1.0 or not isinstance(answer,float):
-            answer = input('Welchen Wert hat z?')
         print('Richtig!\n')
 
 if __name__ == "__main__":
