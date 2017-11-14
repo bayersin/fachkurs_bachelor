@@ -74,6 +74,45 @@ class PythonTest:
             answer = int(input('Was wird der print-Befehl ausgeben?'))
         print('Richtig!\n')
 
+
+    def test_07(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('l = [1,2,3,4]')
+        answer = None
+        while answer != 3:
+            answer = int(input('Was ist die Länge von l[1:3]'))
+        print('Richtig!\n')
+
+    def test_08(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('l = [1,2,3,4]')
+        answer = None
+        while answer != 3:
+            answer = int(input('Welche Zahl ist l[2]?'))
+        print('Richtig!\n')
+
+    def test_09(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('l = [1,2,3,4]')
+        print('l2 = l')
+        print('l.append("meep")')
+        answer = None
+        while answer != 5:
+            answer = int(input('Wie viele Elemente enthält l2?'))
+        print('Richtig!\n')
+
+    def test10(self):
+        print('--------------------------------------------')
+        print('l = [1,2,3,4]')
+        print('a = l.append(5)')
+        answer = None
+        while answer != 'None':
+            answer = input('Was ist a?')
+        print('Richtig!\n')
+
 if __name__ == "__main__":
     test = PythonTest()
     attrs = (getattr(test, name) for name in dir(test))
