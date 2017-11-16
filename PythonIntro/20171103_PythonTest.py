@@ -13,8 +13,8 @@ class PythonTest:
         print('y = x')
         print('x = 3')
         answer = None
-        while answer != 7:
-            answer = int(input('Was ist der Inhalt von y?'))
+        while answer != '7':
+            answer = input('Was ist der Inhalt von y?')
         print('Richtig!\n')
         
     def test_02ma(self):
@@ -35,8 +35,8 @@ class PythonTest:
         print('y = 2')
         print('z = x%y')
         answer = None
-        while answer != 1:
-            answer = int(input('Was ist der Inhalt von y?'))
+        while answer != '1':
+            answer = input('Was ist der Inhalt von y?')
         print('Richtig!\n')
         
     def test_04ma(self):
@@ -47,8 +47,8 @@ class PythonTest:
         print('for x in numbers:')
         print('    sum = sum + x')
         answer = None
-        while answer != 45:
-            answer = int(input('Welchen Wert hat sum?'))
+        while answer != '45':
+            answer = input('Welchen Wert hat sum?')
         print('Richtig!\n')
         
     def test_05ma(self):
@@ -60,8 +60,8 @@ class PythonTest:
         print('else:')
         print('    y = 50')
         answer = None
-        while answer != 50:
-            answer = int(input('Welchen Wert hat y?'))
+        while answer != '50':
+            answer = input('Welchen Wert hat y?')
         print('Richtig!\n')
         
 
@@ -73,8 +73,8 @@ class PythonTest:
         print('\t x = 2\n')
         print('print(x)')
         answer = None
-        while answer != 1:
-            answer = int(input('Was wird der print-Befehl ausgeben?'))
+        while answer != '1':
+            answer = input('Was wird der print-Befehl ausgeben?')
         print('Richtig!\n')
         
     def test_06jo(self):
@@ -85,8 +85,8 @@ class PythonTest:
         print('\t x = 2')
         print('\t print(x)')
         answer = None
-        while answer != 2:
-            answer = int(input('Was wird der print-Befehl ausgeben?'))
+        while answer != '2':
+            answer = input('Was wird der print-Befehl ausgeben?')
         print('Richtig!\n')
 
 
@@ -95,8 +95,8 @@ class PythonTest:
         print('Frage:')
         print('l = [1,2,3,4]')
         answer = None
-        while answer != 2:
-            answer = int(input('Was ist die Länge von l[1:3]'))
+        while answer != '2':
+            answer = input('Was ist die Länge von l[1:3]')
         print('Richtig!\n')
 
     def test_08(self):
@@ -104,8 +104,8 @@ class PythonTest:
         print('Frage:')
         print('l = [1,2,3,4]')
         answer = None
-        while answer != 3:
-            answer = int(input('Welche Zahl ist l[2]?'))
+        while answer != '3':
+            answer = input('Welche Zahl ist l[2]?')
         print('Richtig!\n')
 
     def test_09(self):
@@ -115,8 +115,8 @@ class PythonTest:
         print('l2 = l')
         print('l.append("meep")')
         answer = None
-        while answer != 5:
-            answer = int(input('Wie viele Elemente enthält l2?'))
+        while answer != '5':
+            answer = input('Wie viele Elemente enthält l2?')
         print('Richtig!\n')
 
     def test_10jo(self):
@@ -125,8 +125,8 @@ class PythonTest:
         print('l = [1,2,3,4,5]')
         print('l.extend([6,7,8])')
         answer = None
-        while answer != 8:
-            answer = int(input('Was ist die Länge von l?'))
+        while answer != '8':
+            answer = input('Was ist die Länge von l?')
         print('Richtig!\n')
 
     def test_11jo(self):
@@ -135,8 +135,8 @@ class PythonTest:
         print('l = [1,2,3,4,5]')
         print('l.append([6,7,8])')
         answer = None
-        while answer != 6:
-            answer = int(input('Was ist die Länge von l?'))
+        while answer != '6':
+            answer = input('Was ist die Länge von l?')
         print('Richtig!\n')    
 
     def test12(self):
@@ -157,10 +157,125 @@ class PythonTest:
         print('b = my_func()')
         answer = None
         answer2 = None
-        while answer != 2:
-            answer = int(input('Was ist die Länge von a?'))
-        while answer2 != 2:
-            answer2 = int(input('Was ist die Länge von b?'))
+        while answer != '2':
+            answer = input('Was ist die Länge von a?')
+        while answer2 != '2':
+            answer2 = input('Was ist die Länge von b?')
+
+    def test14(self):
+        print('--------------------------------------------')
+        print('numbers = [1,2,3,4,5,6,7,8,9]')
+        print('sum = 0')
+        print('for x in numbers:')
+        print('\tif x%2 == 0:')
+        print('\t\tsum = sum + x')
+        answer = None
+        while answer != '20':
+            answer = input('Welchen Wert hat sum?')
+
+    def test15(self):
+        print('--------------------------------------------')
+        print('x = 10')
+        print('i = 0')
+        print('while i <= x:')
+        print('\ti = i + 1')
+        print('print(i)')
+        answer = None
+        while answer != '11':
+            answer = input('Was gibt der print Befehl aus?')
+
+    def test16(self):
+        print('--------------------------------------------')
+        print('x = 10')
+        print('i = 0')
+        print('y = 0')
+        print('while i <= x:')
+        print('\ty = y + i')
+        print('\ti = i + 1')
+        print('print(y)')
+        answer = None
+        while answer != '55':
+            answer = input('Was gibt der print Befehl aus?')
+
+    def test17(self):
+        print('--------------------------------------------')
+        print('x = 10')
+        print('i = 0')
+        print('y = 0')
+        print('while i <= x:')
+        print('\ti = i + 1')
+        print('\ty = y + i')
+        print('print(y)')
+        answer = None
+        while answer != '66':
+            answer = input('Was gibt der print Befehl aus?')
+
+    def test18(self):
+        print('--------------------------------------------')
+        print('x = 10')
+        print('i = 0')
+        print('y = 0')
+        print('while i < x:')
+        print('\ti = i + 1')
+        print('\ty = y + i')
+        print('print(y)')
+        answer = None
+        while answer != '55':
+            answer = input('Was gibt der print Befehl aus?')
+
+
+    def test19(self):
+        print('--------------------------------------------')
+        print('x = 10')
+        print('i = 0')
+        print('y = 0')
+        print('i2 = 0')
+        print('y2 = 0')
+        print('while i <= x:')
+        print('\ty = i + y')
+        print('\ti = i + 1')
+        print('while i2 < x:')
+        print('\ti2 = i2 + 1')
+        print('\ty2 = y2 + i2')
+        print('z = str(y == y2)')
+        answer = None
+        while answer != '4':
+            answer = input('Wie viele Zeichen hat z?')
+
+    def test20(self):
+        print('--------------------------------------------')
+        print('x = 10')
+        print('i = 0')
+        print('y = 0')
+        print('i2 = 0')
+        print('y2 = 0')
+        print('while i <= x:')
+        print('\ty = i + y')
+        print('\ti = i + 1')
+        print('while i2 < x:')
+        print('\ti2 = i2 + 1')
+        print('\ty2 = y2 + i2')
+        print("z = str('y == y2')")
+        answer = None
+        while answer != '7':
+            answer = input('Wie viele Zeichen hat z?')
+
+    def test21(self):
+        print('--------------------------------------------')
+        print('answer = None')
+        print('i = 7')
+        print('while answer != 7:')
+        print('\ti = i + 3')
+        print('\tanswer = i%8')
+        print('\tprint(answer)')
+        answer1 = None
+        answer2 = None
+
+        while answer1 != '8':
+            answer1 = input('Wie oft wird der print Befehl ausgeführt?')
+        print('\n')
+        while answer2 != '31':
+            answer2 = input('Welchen Wert hat i, wenn der print Befehl das letzte mal ausgeführt wird?') 
 
 if __name__ == "__main__":
     test = PythonTest()
