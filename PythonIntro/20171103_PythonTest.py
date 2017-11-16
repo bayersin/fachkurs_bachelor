@@ -17,7 +17,7 @@ class PythonTest:
             answer = input('Was ist der Inhalt von y?')
         print('Richtig!\n')
         
-    def test_02ma(self):
+    def test_02(self):
         print('--------------------------------------------')
         print('Frage:')
         print('x = 5')
@@ -28,7 +28,7 @@ class PythonTest:
             answer = (input('Was ist der Inhalt von y?'))
         print('Richtig!\n')
         
-    def test_03ma(self):
+    def test_03(self):
         print('--------------------------------------------')
         print('Frage:')
         print('x = 5')
@@ -39,7 +39,7 @@ class PythonTest:
             answer = input('Was ist der Inhalt von y?')
         print('Richtig!\n')
         
-    def test_04ma(self):
+    def test_04(self):
         print('--------------------------------------------')
         print('Frage:')
         print('numbers = [1,2,3,4,5,6,7,8,9]')
@@ -51,7 +51,7 @@ class PythonTest:
             answer = input('Welchen Wert hat sum?')
         print('Richtig!\n')
         
-    def test_05ma(self):
+    def test_05(self):
         print('--------------------------------------------')
         print('Frage:')
         print('x = 5')
@@ -65,7 +65,7 @@ class PythonTest:
         print('Richtig!\n')
         
 
-    def test_05(self):
+    def test_06(self):
         print('--------------------------------------------')
         print('Frage:')
         print('x = 1')
@@ -77,7 +77,7 @@ class PythonTest:
             answer = input('Was wird der print-Befehl ausgeben?')
         print('Richtig!\n')
         
-    def test_06jo(self):
+    def test_07(self):
         print('--------------------------------------------')
         print('Frage:')
         print('x = 1')
@@ -90,7 +90,7 @@ class PythonTest:
         print('Richtig!\n')
 
 
-    def test_07(self):
+    def test_08(self):
         print('--------------------------------------------')
         print('Frage:')
         print('l = [1,2,3,4]')
@@ -99,7 +99,7 @@ class PythonTest:
             answer = input('Was ist die Länge von l[1:3]')
         print('Richtig!\n')
 
-    def test_08(self):
+    def test_09(self):
         print('--------------------------------------------')
         print('Frage:')
         print('l = [1,2,3,4]')
@@ -108,7 +108,7 @@ class PythonTest:
             answer = input('Welche Zahl ist l[2]?')
         print('Richtig!\n')
 
-    def test_09(self):
+    def test_10(self):
         print('--------------------------------------------')
         print('Frage:')
         print('l = [1,2,3,4]')
@@ -119,7 +119,7 @@ class PythonTest:
             answer = input('Wie viele Elemente enthält l2?')
         print('Richtig!\n')
 
-    def test_10jo(self):
+    def test_11(self):
         print('--------------------------------------------')
         print('Frage:')
         print('l = [1,2,3,4,5]')
@@ -129,7 +129,7 @@ class PythonTest:
             answer = input('Was ist die Länge von l?')
         print('Richtig!\n')
 
-    def test_11jo(self):
+    def test_12(self):
         print('--------------------------------------------')
         print('Frage:')
         print('l = [1,2,3,4,5]')
@@ -139,7 +139,7 @@ class PythonTest:
             answer = input('Was ist die Länge von l?')
         print('Richtig!\n')    
 
-    def test12(self):
+    def test_13(self):
         print('--------------------------------------------')
         print('l = [1,2,3,4]')
         print('a = l.append(5)')
@@ -148,7 +148,7 @@ class PythonTest:
             answer = input('Was ist a?')
         print('Richtig!\n')
 
-    def test13jo(self):
+    def test_14(self):
         print('--------------------------------------------')
         print('def my_func(l=[]):')
         print('\tl.append("item")')
@@ -162,7 +162,7 @@ class PythonTest:
         while answer2 != '2':
             answer2 = input('Was ist die Länge von b?')
 
-    def test14(self):
+    def test_15(self):
         print('--------------------------------------------')
         print('numbers = [1,2,3,4,5,6,7,8,9]')
         print('sum = 0')
@@ -173,7 +173,7 @@ class PythonTest:
         while answer != '20':
             answer = input('Welchen Wert hat sum?')
 
-    def test15(self):
+    def test_16(self):
         print('--------------------------------------------')
         print('x = 10')
         print('i = 0')
@@ -184,7 +184,7 @@ class PythonTest:
         while answer != '11':
             answer = input('Was gibt der print Befehl aus?')
 
-    def test16(self):
+    def test_17(self):
         print('--------------------------------------------')
         print('x = 10')
         print('i = 0')
@@ -197,7 +197,7 @@ class PythonTest:
         while answer != '55':
             answer = input('Was gibt der print Befehl aus?')
 
-    def test17(self):
+    def test_18(self):
         print('--------------------------------------------')
         print('x = 10')
         print('i = 0')
@@ -210,7 +210,7 @@ class PythonTest:
         while answer != '66':
             answer = input('Was gibt der print Befehl aus?')
 
-    def test18(self):
+    def test_19(self):
         print('--------------------------------------------')
         print('x = 10')
         print('i = 0')
@@ -224,7 +224,7 @@ class PythonTest:
             answer = input('Was gibt der print Befehl aus?')
 
 
-    def test19(self):
+    def test_20(self):
         print('--------------------------------------------')
         print('x = 10')
         print('i = 0')
@@ -242,7 +242,7 @@ class PythonTest:
         while answer != '4':
             answer = input('Wie viele Zeichen hat z?')
 
-    def test20(self):
+    def test_21(self):
         print('--------------------------------------------')
         print('x = 10')
         print('i = 0')
@@ -260,7 +260,7 @@ class PythonTest:
         while answer != '7':
             answer = input('Wie viele Zeichen hat z?')
 
-    def test21(self):
+    def test_22(self):
         print('--------------------------------------------')
         print('answer = None')
         print('i = 7')
