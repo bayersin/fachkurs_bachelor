@@ -17,6 +17,53 @@ class PythonTest:
             answer = int(input('Was ist der Inhalt von y?'))
         print('Richtig!\n')
         
+    def test_02ma(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 5')
+        print('y = 2')
+        print('z = x == y')
+        answer = None
+        while answer != "False":
+            answer = (input('Was ist der Inhalt von y?'))
+        print('Richtig!\n')
+        
+    def test_03ma(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 5')
+        print('y = 2')
+        print('z = x%y')
+        answer = None
+        while answer != 1:
+            answer = int(input('Was ist der Inhalt von y?'))
+        print('Richtig!\n')
+        
+    def test_04ma(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('numbers = [1,2,3,4,5,6,7,8,9]')
+        print('sum = 0')
+        print('for x in numbers:')
+        print('    sum = sum + x')
+        answer = None
+        while answer != 45:
+            answer = int(input('Welchen Wert hat sum?'))
+        print('Richtig!\n')
+        
+    def test_05ma(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('x = 5')
+        print('if x == 2:')
+        print('    y = 3')
+        print('else:')
+        print('    y = 50')
+        answer = None
+        while answer != 50:
+            answer = int(input('Welchen Wert hat y?'))
+        print('Richtig!\n')
+        
 
     def test_05(self):
         print('--------------------------------------------')
