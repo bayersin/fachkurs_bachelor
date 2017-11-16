@@ -119,7 +119,7 @@ class PythonTest:
             answer = int(input('Wie viele Elemente enthält l2?'))
         print('Richtig!\n')
 
-     def test_10jo(self):
+    def test_10jo(self):
         print('--------------------------------------------')
         print('Frage:')
         print('l = [1,2,3,4,5]')
