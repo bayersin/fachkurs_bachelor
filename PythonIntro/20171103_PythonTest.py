@@ -72,13 +72,48 @@ class PythonTest:
             answer = int(input('Wie viele Elemente enthält l2?'))
         print('Richtig!\n')
 
-    def test10(self):
+    def test_10jo(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('l = [1,2,3,4,5]')
+        print('l.extend([6,7,8])')
+        answer = None
+        while answer != 8:
+            answer = int(input('Was ist die Länge von l?'))
+        print('Richtig!\n')
+
+    def test_11jo(self):
+        print('--------------------------------------------')
+        print('Frage:')
+        print('l = [1,2,3,4,5]')
+        print('l.append([6,7,8])')
+        answer = None
+        while answer != 6:
+            answer = int(input('Was ist die Länge von l?'))
+        print('Richtig!\n')    
+
+    def test12(self):
         print('--------------------------------------------')
         print('l = [1,2,3,4]')
         print('a = l.append(5)')
         answer = None
         while answer != 'None':
             answer = input('Was ist a?')
+        print('Richtig!\n')
+
+    def test13jo(self):
+        print('--------------------------------------------')
+        print('def my_func(l=[]):')
+        print('\tl.append("item")')
+        print('\treturn l')
+        print('a = my_func()')
+        print('b = my_func()')
+        answer = None
+        answer2 = None
+        while answer != 2:
+            answer = int(input('Was ist die Länge von a?'))
+        while answer2 != 2:
+            answer2 = int(input('Was ist die Länge von b?'))
         print('Richtig!\n')
 
 if __name__ == "__main__":
