@@ -298,12 +298,12 @@ class PythonTest:
         print('my_func(other_int)')
         print('print(other_int)')
         answer = None
-        while answer != self.sol[24]:
+        while answer != self.sol['24']:
             answer = input('Was gibt der print-Befehl aus?')
 
 
 if __name__ == "__main__":
-    test = PythonTest()
+    test = PythonTest('sol.pkl')
     attrs = (getattr(test, name) for name in dir(test))
     methods = filter(inspect.ismethod, attrs)
     for method in methods:
