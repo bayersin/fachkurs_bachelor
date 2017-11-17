@@ -14,5 +14,5 @@ Schedule:
 
 |Di|Mi|Do|Fr|
 |--|--|--|--|
-|Projekt|Projekt|Projekt|Projekt|
+|Projekt|Projekt|Projekt|Vorträge|
 |Projekt|Projekt|Projekt|Vorträge|

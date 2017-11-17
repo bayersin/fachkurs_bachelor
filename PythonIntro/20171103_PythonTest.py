@@ -1,10 +1,12 @@
 import numpy as np
 import inspect
+import pickle
 # from itertools import ifilter
 
 class PythonTest:
-    def __init__(self):
-        pass
+    def __init__(self, solpath):
+        pickle_in = open(solpath,"rb")
+        self.sol = pickle.load(pickle_in)
 
     def test_01(self):
         print('--------------------------------------------')
@@ -13,7 +15,7 @@ class PythonTest:
         print('y = x')
         print('x = 3')
         answer = None
-        while answer != '7':
+        while answer != self.sol['01']:
             answer = input('Was ist der Inhalt von y?')
         print('Richtig!\n')
         
@@ -24,7 +26,7 @@ class PythonTest:
         print('y = 2')
         print('z = x == y')
         answer = None
-        while answer != "False":
+        while answer != self.sol['02']:
             answer = (input('Was ist der Inhalt von y?'))
         print('Richtig!\n')
         
@@ -35,7 +37,7 @@ class PythonTest:
         print('y = 2')
         print('z = x%y')
         answer = None
-        while answer != '1':
+        while answer != self.sol['03']:
             answer = input('Was ist der Inhalt von y?')
         print('Richtig!\n')
         
@@ -47,7 +49,7 @@ class PythonTest:
         print('for x in numbers:')
         print('    sum = sum + x')
         answer = None
-        while answer != '45':
+        while answer != self.sol['04']:
             answer = input('Welchen Wert hat sum?')
         print('Richtig!\n')
         
@@ -60,7 +62,7 @@ class PythonTest:
         print('else:')
         print('    y = 50')
         answer = None
-        while answer != '50':
+        while answer != self.sol['05']:
             answer = input('Welchen Wert hat y?')
         print('Richtig!\n')
         
@@ -73,7 +75,7 @@ class PythonTest:
         print('\t x = 2\n')
         print('print(x)')
         answer = None
-        while answer != '1':
+        while answer != self.sol['06']:
             answer = input('Was wird der print-Befehl ausgeben?')
         print('Richtig!\n')
         
@@ -85,7 +87,7 @@ class PythonTest:
         print('\t x = 2')
         print('\t print(x)')
         answer = None
-        while answer != '2':
+        while answer != self.sol['07']:
             answer = input('Was wird der print-Befehl ausgeben?')
         print('Richtig!\n')
 
@@ -95,7 +97,7 @@ class PythonTest:
         print('Frage:')
         print('l = [1,2,3,4]')
         answer = None
-        while answer != '2':
+        while answer != self.sol['08']:
             answer = input('Was ist die Länge von l[1:3]')
         print('Richtig!\n')
 
@@ -104,7 +106,7 @@ class PythonTest:
         print('Frage:')
         print('l = [1,2,3,4]')
         answer = None
-        while answer != '3':
+        while answer != self.sol['09']:
             answer = input('Welche Zahl ist l[2]?')
         print('Richtig!\n')
 
@@ -115,7 +117,7 @@ class PythonTest:
         print('l2 = l')
         print('l.append("meep")')
         answer = None
-        while answer != '5':
+        while answer != self.sol['10']:
             answer = input('Wie viele Elemente enthält l2?')
         print('Richtig!\n')
 
@@ -125,7 +127,7 @@ class PythonTest:
         print('l = [1,2,3,4,5]')
         print('l.extend([6,7,8])')
         answer = None
-        while answer != '8':
+        while answer != self.sol['11']:
             answer = input('Was ist die Länge von l?')
         print('Richtig!\n')
 
@@ -135,7 +137,7 @@ class PythonTest:
         print('l = [1,2,3,4,5]')
         print('l.append([6,7,8])')
         answer = None
-        while answer != '6':
+        while answer != self.sol['12']:
             answer = input('Was ist die Länge von l?')
         print('Richtig!\n')    
 
@@ -144,7 +146,7 @@ class PythonTest:
         print('l = [1,2,3,4]')
         print('a = l.append(5)')
         answer = None
-        while answer != 'None':
+        while answer != self.sol['13']:
             answer = input('Was ist a?')
         print('Richtig!\n')
 
@@ -157,9 +159,9 @@ class PythonTest:
         print('b = my_func()')
         answer = None
         answer2 = None
-        while answer != '2':
+        while answer != self.sol['14a']:
             answer = input('Was ist die Länge von a?')
-        while answer2 != '2':
+        while answer2 != self.sol['14b']:
             answer2 = input('Was ist die Länge von b?')
 
     def test_15(self):
@@ -170,7 +172,7 @@ class PythonTest:
         print('\tif x%2 == 0:')
         print('\t\tsum = sum + x')
         answer = None
-        while answer != '20':
+        while answer != self.sol['15']:
             answer = input('Welchen Wert hat sum?')
 
     def test_16(self):
@@ -181,7 +183,7 @@ class PythonTest:
         print('\ti = i + 1')
         print('print(i)')
         answer = None
-        while answer != '11':
+        while answer != self.sol['16']:
             answer = input('Was gibt der print Befehl aus?')
 
     def test_17(self):
@@ -194,7 +196,7 @@ class PythonTest:
         print('\ti = i + 1')
         print('print(y)')
         answer = None
-        while answer != '55':
+        while answer != self.sol['17']:
             answer = input('Was gibt der print Befehl aus?')
 
     def test_18(self):
@@ -207,7 +209,7 @@ class PythonTest:
         print('\ty = y + i')
         print('print(y)')
         answer = None
-        while answer != '66':
+        while answer != self.sol['18']:
             answer = input('Was gibt der print Befehl aus?')
 
     def test_19(self):
@@ -220,7 +222,7 @@ class PythonTest:
         print('\ty = y + i')
         print('print(y)')
         answer = None
-        while answer != '55':
+        while answer != self.sol['19']:
             answer = input('Was gibt der print Befehl aus?')
 
 
@@ -239,7 +241,7 @@ class PythonTest:
         print('\ty2 = y2 + i2')
         print('z = str(y == y2)')
         answer = None
-        while answer != '4':
+        while answer != self.sol['20']:
             answer = input('Wie viele Zeichen hat z?')
 
     def test_21(self):
@@ -257,7 +259,7 @@ class PythonTest:
         print('\ty2 = y2 + i2')
         print("z = str('y == y2')")
         answer = None
-        while answer != '7':
+        while answer != self.sol['21']:
             answer = input('Wie viele Zeichen hat z?')
 
     def test_22(self):
@@ -271,10 +273,10 @@ class PythonTest:
         answer1 = None
         answer2 = None
 
-        while answer1 != '8':
+        while answer1 != self.sol['22a']:
             answer1 = input('Wie oft wird der print Befehl ausgeführt?')
         print('\n')
-        while answer2 != '31':
+        while answer2 != self.sol['22b']:
             answer2 = input('Welchen Wert hat i, wenn der print Befehl das letzte mal ausgeführt wird?') 
 
 if __name__ == "__main__":
