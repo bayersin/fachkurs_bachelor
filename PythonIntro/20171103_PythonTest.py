@@ -27,7 +27,7 @@ class PythonTest:
         print('z = x == y')
         answer = None
         while answer != self.sol['02']:
-            answer = (input('Was ist der Inhalt von y?'))
+            answer = (input('Was ist der Inhalt von z?'))
         print('Richtig!\n')
         
     def test_03(self):
@@ -38,7 +38,7 @@ class PythonTest:
         print('z = x%y')
         answer = None
         while answer != self.sol['03']:
-            answer = input('Was ist der Inhalt von y?')
+            answer = input('Was ist der Inhalt von z?')
         print('Richtig!\n')
         
     def test_04(self):
