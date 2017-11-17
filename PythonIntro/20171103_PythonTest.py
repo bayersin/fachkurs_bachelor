@@ -279,6 +279,29 @@ class PythonTest:
         while answer2 != self.sol['22b']:
             answer2 = input('Welchen Wert hat i, wenn der print Befehl das letzte mal ausgeführt wird?') 
 
+    def test_23(self):
+        print('--------------------------------------------')
+        print('def my_func(my_list):')
+        print('\tmy_list.append(42)\n')
+        print('other_list = []')
+        print('my_func(other_list)')
+        print('print(other_list)')
+        answer = None
+        while answer != self.sol['23']:
+            answer = input('Was gibt der print-Befehl aus?')
+
+    def test_24(self):
+        print('--------------------------------------------')
+        print('def my_func(my_int):')
+        print('\tmy_int = my_int + 1\n')
+        print('other_int = 3')
+        print('my_func(other_int)')
+        print('print(other_int)')
+        answer = None
+        while answer != self.sol[24]:
+            answer = input('Was gibt der print-Befehl aus?')
+
+
 if __name__ == "__main__":
     test = PythonTest()
     attrs = (getattr(test, name) for name in dir(test))
