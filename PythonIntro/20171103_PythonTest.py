@@ -242,21 +242,15 @@ class PythonTest:
     def test_20(self):
         print('--------------------------------------------')
         print('Frage 20:')
-        print('x = 10')
-        print('i = 0')
-        print('y = 0')
-        print('i2 = 0')
-        print('y2 = 0')
-        print('while i <= x:')
-        print('\ty = i + y')
-        print('\ti = i + 1')
-        print('while i2 < x:')
-        print('\ti2 = i2 + 1')
-        print('\ty2 = y2 + i2')
-        print('z = str(y == y2)')
+        print('def return_second(my_list):')
+        print('\tsecond_item = my_list[x]')
+        print('\treturn second_item\n')
+        print('a_list = [2,7,6,1]')
+        print('print(return_second(a_list))\n')
+        print('7')
         answer = None
         while answer != self.sol['20']:
-            answer = input('Wie viele Zeichen hat z?')
+            answer = input('Was muss x sein, der oben stehende Code stimmt?')
 
     def test_21(self):
         print('--------------------------------------------')
