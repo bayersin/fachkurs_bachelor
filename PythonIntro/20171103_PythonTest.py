@@ -255,39 +255,26 @@ class PythonTest:
     def test_21(self):
         print('--------------------------------------------')
         print('Frage 21:')
-        print('x = 10')
-        print('i = 0')
-        print('y = 0')
-        print('i2 = 0')
-        print('y2 = 0')
-        print('while i <= x:')
-        print('\ty = i + y')
-        print('\ti = i + 1')
-        print('while i2 < x:')
-        print('\ti2 = i2 + 1')
-        print('\ty2 = y2 + i2')
-        print("z = str('y == y2')")
+        print('def append_str(string, character=" "):')
+        print('\tnew_string = string + character\n')
+        print('a = "bob"')
+        print('a = append_str(a, "fahren")')
         answer = None
         while answer != self.sol['21']:
-            answer = input('Wie viele Zeichen hat z?')
+            answer = input('Was steht in a?')
 
     def test_22(self):
         print('--------------------------------------------')
         print('Frage 22:')
-        print('answer = None')
-        print('i = 7')
-        print('while answer != 7:')
-        print('\ti = i + 3')
-        print('\tanswer = i%8')
-        print('\tprint(answer)')
-        answer1 = None
-        answer2 = None
-
-        while answer1 != self.sol['22a']:
-            answer1 = input('Wie oft wird der print Befehl ausgeführt?')
-        print('\n')
-        while answer2 != self.sol['22b']:
-            answer2 = input('Welchen Wert hat i, wenn der print Befehl das letzte mal ausgeführt wird?') 
+        print('def append_str(string, character=" "):')
+        print('\tnew_string = string + character')
+        print('\treturn new_string\n')
+        print('a = "bob"')
+        print('a = append_str(a)')
+        print('a = append_str(a, "fahren")')
+        answer = None
+        while answer != self.sol['21']:
+            answer = input('Was steht in a?') 
 
     def test_23(self):
         print('--------------------------------------------')
